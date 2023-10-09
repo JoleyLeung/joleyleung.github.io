@@ -5,43 +5,60 @@
   <title>Best Website Ever</title>
   <style>
     .post {
-      background-color: brown;
+      background-color: #d2e8ef;
+      color: black;
+      padding: 10px 20px;
+    }
+
+    a:hover {
+      color: black;
+    }
+
+    a {
       color: white;
     }
-    a:hover {color: red;}
-    .container > a {  
-      flex: 1;
-  }
-    .container  {  
-         gap: 10px;
-  }
 
+    .container {
+      display: flex;
+      background-color: #839aa1;
+      gap: 0 50px;
+      flex-wrap: wrap;
+
+    }
+
+    .container>div {
+      margin: 5px;
+      padding: 5px;
+      font-size: 20px;
+
+    }
   </style>
 </head>
 
-<body style="background-color: azure; margin: 0 100px; padding: 0; font-family:Courier New;" >
+<body style="background-color: #edf6f9; margin: 0 100px; padding: 0; font-family:Courier New;">
 
   <!-- align the profile link to the right and use flexbox for the nav (see slides) -->
-  <div style="background-color: rgb(181, 181, 181); padding: 10px; color: yellow;" class="contianer">
-    <a href="/">Home</a>
-    <a href="/">About</a>
-    <a href="/">Contact</a>
-    <a href="/">Profile</a>
+  <div class="container">
+
+    <div><a href="/">Home</a></div>
+    <div> <a href="/">About</a></div>
+    <div> <a href="/">Contact</a></div>
+    <div> <a href="/">Profile</a></div>
   </div>
 
   <!-- center the image (must be display: block to use margin auto to center horizontally)-->
   <img src="/rodion-kutsaiev-unsplash.jpg" style="border-radius: 0%" alt="placeholder image">
 
-  <h1 style="text-align: center; width: 100%; background-color: orange;">Best Website Ever</h1>
+  <h1 style="text-align: center; width: 100%; ">Best Website Ever</h1>
   <button
-    style="border-radius: 6px; padding: 10px 20px; border: none; font-size: 20px; background-color: burlywood; font-family:Courier New;cursor:pointer">More
+    style="border-radius: 6px; padding: 10px 20px; border: none; font-size: 20px; background-color: #d2e8ef; font-family:Courier New;cursor:pointer">More
     Info</button>
 
-  <div style="width: 100%; text-align: center; background-color: aquamarine; color: blue;">
+  <div style="width: 100%; text-align: center; margin: 10px 0">
     Bad Centering
   </div>
 
-  <div style="margin-top: 10px; padding: 10px 20px; margin-bottom: 10px; background-color: orange; text-align: left;">
+  <div style="margin-top: 10px; padding: 10px 20px; margin-bottom: 10px; text-align: left;">
     We are a group of Lexington students passionate about Computer Science who want to contribute to our community! In
     this team we emphasize collaboration, perseverance, dedication and kindness. We work efficiently together and build
     upon our teamwork skills to gain the most from every learning experience, hoping to make a difference in our
